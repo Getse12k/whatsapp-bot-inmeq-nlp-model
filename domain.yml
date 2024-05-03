@@ -1,0 +1,101 @@
+version: "3.1"
+
+intents:
+  - saudar
+  - despedir
+  # Técnica
+  - tirar_duvida
+  - atendimento_oficinas_permissionarias
+  - solicitar_servico
+  # Arrecadação
+  - informacoes_processo_fiscalizacao
+  - boleto
+  - segunda_via_negociacao_debito
+  - CADIN
+  # Júridico
+  - informacoes_processuais
+  # Ouvidoria
+  - sugerir
+  - reclamar
+
+  - informar_duvida
+  - informar_reclamacao
+  - informar_servico
+
+entities:
+  - duvida
+  - reclamação
+  - sugestao
+  - servico
+
+actions:
+  - action_iniciar_atendimento
+
+responses:
+  utter_saudar:
+    - text: "Olá, seja bem-vindo ao Instituto de Metrologia e Qualidade Industrial. Vamos começar seu atendimento: O que você deseja?\n
+        - Tirar duvidas\n
+        - Atendimento a oficinas permissionárias\n
+        - Solicitação de serviço\n
+        - Informações sobre o processo de fiscalização\n
+        - Boletos\n
+        - Segunda via renegociações de débitos\n
+        - CADIN\n
+        - Informações processuais\n
+        - Dar sugestões\n
+        - Reclamações\n"
+
+  utter_tirar_duvida:
+  - text: "Digite sua duvida"
+  - text: "Qual sua duvida?"
+  - text: "Informe sua duvida"
+
+  utter_atendimento_oficinas_permissionarias:
+  - text: "Digite o que voce quer sobre atendimento a oficinas permissionárias"
+
+  utter_solicitar_servico:
+  - text: "Digite o servico a ser solicitado"
+
+  utter_informacoes_processo_fiscalizacao:
+  - text: "O que voce deseja sobre o processo de fiscalização?"
+
+  utter_boleto:
+  - text: "Digite o que voce quer sobre boleto"
+
+  utter_segunda_via_negociacao_debito: 
+  - text: "Digite o que voce quer sobre segunda via de negociação"
+
+  utter_cadin:
+  - text: "Digite o que voce quer sobre cadin"
+
+  utter_informacoes_processuais:
+  - text: "Para informações jurídicas envie email para proju@inmeq.ma.gov.br"
+
+  utter_sugerir:
+  - text: "Digite a sua sugestão"
+
+  utter_reclamar:
+  - text: "Digite a sua reclamação"
+
+  utter_despedir:
+  - text: "Obrigado por entrar em contato conosco. Esperamos ter resolvido suas dúvidas.
+        Esse é o INMEQ-MA trabalhando para todos"
+
+
+  utter_responder_duvida:
+  - text: "Certo! Iremos ajudar assim que possivel!"
+
+  utter_responder_sugestao:
+  - text: "Obrigado pelo seu feedback!"
+
+  utter_responder_reclamacao:
+  - text: "Obrigado por entrar em contato conosco. Iremos analisar a sua situação"
+
+  utter_responder_servico:
+  - text: "Iremos prover o serviço solicitado"
+
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

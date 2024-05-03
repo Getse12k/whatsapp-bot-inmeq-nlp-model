@@ -1,0 +1,13 @@
+version: "3.1"
+
+rules:
+
+# - rule: Iniciar atendimento
+#   steps:
+#   - intent: saudar
+#   - action: action_iniciar_atendimento
+
+- rule: Informações processuais
+  steps:
+  - intent: informacoes_processuais
+  - action: utter_informacoes_processuais

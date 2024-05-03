@@ -1,0 +1,112 @@
+version: "3.1"
+
+nlu:
+  - intent: saudar
+    examples: |
+      - Olá!
+      - Bom dia!
+      - Boa tarde!
+      - Boa noite!
+      - Oi
+      - Preciso de uma ajuda
+
+  - intent: despedir
+    examples: |
+      - Tchau
+      - Até mais
+      - Obrigado!
+
+  - intent: tirar_duvida
+    examples: |
+      - Gostaria de tirar uma dúvida
+      - Vou tirar uma dúvida
+      - Tenho uma dúvida
+      - Dúvida
+      - Eu desejo tirar uma dúvida
+
+  - intent: atendimento_oficinas_permissionarias
+    examples: |
+      - Gostaria de solicitar um atendimento a oficina permissionaria
+      - Vou solicitar um atendimento a oficina permissionaria
+      - Tenho um atendimento a oficina permissionaria
+      - Atendimento a oficina permissionaria
+      - Eu desejo solicitar um atendimento a oficina permissionaria
+      - Eu quero solicitar um atendimento a oficina permissionaria
+
+  - intent: solicitar_servico
+    examples: |
+      - Gostaria de solicitar um serviço
+      - Vou solicitar um serviço
+      - Tenho um serviço
+      - Serviço
+      - Eu desejo solicitar um serviço
+      - Eu quero solicitar um serviço
+      - Eu quero um serviço
+      - Solicitação de servico
+
+  - intent: informacoes_processo_fiscalizacao
+    examples: |
+      - Gostaria de ver as informações do processo fiscal
+      - Vou ver as informações do processo fiscal
+      - Informações do processo fiscal
+      - Eu quero ver as informações do processo fiscal
+  
+  - intent: boleto
+    examples: |
+      - Gostaria de gerar um boleto
+      - Vou gerar um boleto
+      - Boleto
+      - Eu quero gerar um boleto
+      - Gostaria de emitir um boleto
+
+  - intent: segunda_via_negociacao_debito
+    examples: |
+      - Gostaria de gerar uma segunda via de renegociação de débito
+      - Vou gerar uma segunda via de renegociação de débito
+      - Segunda via de renegociação de débito
+      - Renegociação de débito
+
+  - intent: CADIN
+    examples: |
+      - Débito
+
+  - intent: informacoes_processuais
+    examples: |
+      - Gostaria de receber infomações processuais
+      - Vou receber infomações processuais
+      - Infomações processuais
+      - Eu quero receber infomações processuais
+
+  - intent: sugerir
+    examples: |
+      - Gostaria de fazer sugestões
+      - Vou fazer sugestões
+      - Sugestões
+      - Eu quero fazer sugestões
+
+  - intent: reclamar
+    examples: |
+      - Gostaria de reclamar
+      - Vou reclamar
+      - Reclamar
+      - Eu quero reclamar
+
+
+  - intent: informar_duvida
+    examples: |
+     - Minha duvida é se pode fazer algo
+     - Queria saber o horario de funcionamento
+     - Como fazer tal coisa
+
+  - intent: informar_reclamacao
+    examples: |
+     - Quero reclamar sobre asdahs
+     - Aconteceu tal coisa de errado
+  
+  - intent: informar_servico
+    examples: |
+     - Queria fazer uma solicitação de um burro de carga
+     - Analise de qualidade para burro de carga
+     - Preciso de um burro de carga
+
+

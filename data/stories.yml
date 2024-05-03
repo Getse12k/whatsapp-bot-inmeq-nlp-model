@@ -1,0 +1,36 @@
+version: "3.1"
+
+stories:
+
+- story: tirar duvidas 1
+  steps:
+  - intent: saudar
+  - action: utter_saudar
+  - intent: tirar_duvida
+  - action: utter_tirar_duvida
+  - intent: informar_duvida
+  - action: utter_responder_duvida
+  - intent: despedir
+  - action: utter_despedir
+
+- story: fazer uma reclamação 1
+  steps: 
+  - intent: saudar
+  - action: utter_saudar
+  - intent: reclamar
+  - action: utter_reclamar
+  - intent: informar_reclamacao
+  - action: utter_responder_reclamacao
+  - intent: despedir
+  - action: utter_despedir
+
+- story: solicitação de servico 1
+  steps: 
+  - intent: saudar
+  - action: utter_saudar
+  - intent: solicitar_servico
+  - action: utter_solicitar_servico
+  - intent: informar_servico
+  - action: utter_responder_servico
+  - intent: despedir
+  - action: utter_despedir
